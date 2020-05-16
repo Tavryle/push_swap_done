@@ -54,10 +54,10 @@ void	rr(t_stacks *stacks)
 	if (stacks->b_size > 1)
 	{
 		i = 1;
-		tmp = stacks->a_stack[0];
+		tmp = stacks->b_stack[0];
 		while (i < stacks->b_size)
 		{
-			stacks->a_stack[i - 1] = stacks->a_stack[i];
+			stacks->b_stack[i - 1] = stacks->b_stack[i];
 			i++;
 		}
 		stacks->b_stack[i - 1] = tmp;

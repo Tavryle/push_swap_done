@@ -19,7 +19,7 @@ void		sb(t_stacks *stacks)
 	if(stacks->b_size < 2)
 		return ;
 	tmp = stacks->b_stack[0];
-	stacks->b_stack[1] = stacks->b_stack[0];
+	stacks->b_stack[0] = stacks->b_stack[1];
 	stacks->b_stack[1] = tmp;
 	ft_putstr("sb\n");
 }
@@ -31,13 +31,13 @@ void		ss(t_stacks *stacks)
 	if(stacks->a_size > 1)
 	{
 		tmp = stacks->a_stack[0];
-		stacks->a_stack[0] = stacks->b_stack[1];
-		stacks->b_stack[1] = tmp;
+		stacks->a_stack[0] = stacks->a_stack[1];
+		stacks->a_stack[1] = tmp;
 	}
 	if(stacks->b_size > 1)
 	{
 		tmp = stacks->b_stack[0];
-		stacks->a_stack[0] = stacks->b_stack[1];
+		stacks->b_stack[0] = stacks->b_stack[1];
 		stacks->b_stack[1] = tmp;
 	}
 	ft_putstr("ss\n");

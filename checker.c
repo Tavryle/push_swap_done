@@ -24,33 +24,19 @@ static int	exc_instructions(t_stacks *stacks,char *in)
 			return (-1);	
 	}
 	else if(ft_strcmp(in , "sa") == 0)
-	{
 		exc_sa_ch(stacks);
-	}
 	else if(ft_strcmp(in, "sb") == 0)
-	{
 		exc_sb_ch(stacks);
-	}
 	else if(ft_strcmp(in , "ss") == 0)
-	{
 		exc_ss_ch(stacks);
-	}
 	else if(ft_strcmp(in, "pa") == 0)
-	{
 		exc_pa_ch(stacks);
-	}
 	else if (ft_strcmp(in, "pb") == 0)
-	{
 		exc_pb_ch(stacks);
-	}
 	else if (ft_strcmp(in, "ra") == 0)
-	{
 		exc_ra_ch(stacks);
-	}
 	else if (ft_strcmp(in, "rb") == 0)
-	{
 		exc_rb_ch(stacks);
-	}
 	else
 		return (-1);
 	return (0);
